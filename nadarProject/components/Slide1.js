@@ -2,6 +2,9 @@ import React from 'react'
 import { StyleSheet, Text, View, Button, ImageBackground, Image } from 'react-native'
 
 const styles = StyleSheet.create({
+  txt: {
+    fontFamily: 'mekouille'
+  },
   wrapper: {
     marginLeft: 50
   },
@@ -18,6 +21,7 @@ const styles = StyleSheet.create({
   nadarName: {
     color: 'white',
     fontSize: 40,
+    fontFamily: 'mekouille'
   },
   redBanner: {
     backgroundColor: '#CA474D',
@@ -32,6 +36,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     fontSize: 20,
     color: 'white',
+    fontFamily: 'mekouille'
+
   },
   title: {
     display: 'flex',
@@ -52,9 +58,8 @@ const styles = StyleSheet.create({
 })
 
 class HomeScreen extends React.Component {
-  // static navigationOption = {
-  //   headerMode : 'none'
-  // } 
+
+
   render() {
     return (
       <ImageBackground source= {require('../pictures/background1.png')} style={styles.backgroundImage}>
@@ -76,11 +81,11 @@ class HomeScreen extends React.Component {
             </View>
           </View>
           <View style={styles.blackBlock}>
-            <Text style={{color: 'white', fontSize: 30 }}>LES NADAR</Text>
-            <Text style={{color: 'white', fontSize: 30 }}>PAR LES NADAR</Text>
-            <Text style={{color: '#AA8962', fontSize: 17 }}>Une légende familiale</Text>
-            <Text style={{color: '#AA8962', fontSize: 17 }}>à l'origine d'un siècle</Text>
-            <Text style={{color: '#AA8962', fontSize: 17 }}>de photographie</Text>
+            <Text style={{color: 'white', fontSize: 30, fontFamily: 'mekouille'}}>LES NADAR</Text>
+            <Text style={{color: 'white', fontSize: 30, fontFamily: 'mekouille' }}>PAR LES NADAR</Text>
+            <Text style={{color: '#AA8962', fontSize: 17, fontFamily: 'mekouille' }}>Une légende familiale</Text>
+            <Text style={{color: '#AA8962', fontSize: 17, fontFamily: 'mekouille' }}>à l'origine d'un siècle</Text>
+            <Text style={{color: '#AA8962', fontSize: 17, fontFamily: 'mekouille' }}>de photographie</Text>
           </View>
         </View>
           <View style={styles.btn}>
