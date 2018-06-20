@@ -1,7 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import store from './Store.js'
 
 export default class App extends React.Component {
+
+  state =  store.getState()
+  constructor() {
+    super()
+    store.subscribe(()=> this.setState(store.getState()))
+  }
+
   render() {
     return (
       <View style={styles.container}>
