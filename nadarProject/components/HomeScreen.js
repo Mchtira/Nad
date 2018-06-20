@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button, ImageBackground } from 'react-native'
+import NavigationButton from './NavigationButton.js'
 
 const styles = StyleSheet.create({
   backgroundImage: {
@@ -18,10 +19,7 @@ class HomeScreen extends React.Component {
       <ImageBackground source= {require('../pictures/background1.png')} style={styles.backgroundImage}>
         <View style={styles.view}>
           <Text>Home Screen</Text>
-          <Button
-          title="Go to Details"
-          onPress={() => this.props.navigation.navigate('Details')}
-          />
+          <NavigationButton title='hello' />
         </View>
       </ImageBackground>
     )
