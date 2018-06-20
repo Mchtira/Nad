@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
   redBanner: {
     backgroundColor: '#CA474D',
     width: 280,
+    marginTop: 40,
   }
 })
 
