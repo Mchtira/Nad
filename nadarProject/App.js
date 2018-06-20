@@ -36,6 +36,6 @@ export default class App extends React.Component {
   }
 
   render() {
-    return  this.state.loading ? <Text>lol</Text> : <RootStack />
+    return  this.state.loading ? <Text>loading..</Text> : <RootStack />
   }
 }
