@@ -14,9 +14,8 @@ const styles = StyleSheet.create({
 
 class HomeScreen extends React.Component {
   render() {
-    const resizeMode = 'contain';    
     return (
-      <ImageBackground source= {require('./tof.jpg')} style={styles.backgroundImage}>
+      <ImageBackground source= {require('../pictures/background1.png')} style={styles.backgroundImage}>
         <View style={styles.view}>
           <Text>Home Screen</Text>
           <Button
