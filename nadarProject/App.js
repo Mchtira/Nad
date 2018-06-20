@@ -1,17 +1,19 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
-import DetailsScreen from './components/DetailsScreen'
-import HomeScreen from './components/HomeScreen.js'
-
+import Slide2 from './components/Slide2'
+import Slide1 from './components/Slide1'
 
 const RootStack = createStackNavigator(
   {
-    Home: HomeScreen,
-    Details: DetailsScreen,
+    Slide1: Slide1,
+    Slide2: Slide2,
   },
   {
-    initialRouteName: 'Home'
+    initialRouteName: 'Slide1',
+    headerMode: 'none',
+    navigationOption: {
+      // headerVisible: false
+    }
   }
 );
 
