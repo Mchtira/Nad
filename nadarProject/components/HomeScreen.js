@@ -1,16 +1,30 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button } from 'react-native'
+import { StyleSheet, Text, View, Button, ImageBackground } from 'react-native'
+
+const styles = StyleSheet.create({
+  backgroundImage: {
+      flex: 1,
+  },
+  view: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+})
 
 class HomeScreen extends React.Component {
   render() {
+    const resizeMode = 'contain';    
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
-        <Button
+      <ImageBackground source= {require('./tof.jpg')} style={styles.backgroundImage}>
+        <View style={styles.view}>
+          <Text>Home Screen</Text>
+          <Button
           title="Go to Details"
           onPress={() => this.props.navigation.navigate('Details')}
-        />
-      </View>
+          />
+        </View>
+      </ImageBackground>
     )
   }
 }
