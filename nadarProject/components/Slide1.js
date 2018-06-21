@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button, ImageBackground, Image } from 'react-native'
+import { P, H } from './Basics'
 
 const styles = StyleSheet.create({
   txt: {
@@ -59,7 +60,6 @@ const styles = StyleSheet.create({
 
 class HomeScreen extends React.Component {
 
-
   render() {
     return (
       <ImageBackground source= {require('../pictures/background1.png')} style={styles.backgroundImage}>
@@ -81,11 +81,11 @@ class HomeScreen extends React.Component {
             </View>
           </View>
           <View style={styles.blackBlock}>
-            <Text style={{color: 'white', fontSize: 30, fontFamily: 'mekouille'}}>LES NADAR</Text>
-            <Text style={{color: 'white', fontSize: 30, fontFamily: 'mekouille' }}>PAR LES NADAR</Text>
-            <Text style={{color: '#AA8962', fontSize: 17, fontFamily: 'mekouille' }}>Une légende familiale</Text>
-            <Text style={{color: '#AA8962', fontSize: 17, fontFamily: 'mekouille' }}>à l'origine d'un siècle</Text>
-            <Text style={{color: '#AA8962', fontSize: 17, fontFamily: 'mekouille' }}>de photographie</Text>
+            <H>LES NADAR</H>
+            <H>PAR LES NADAR</H>
+            <P>Une légende familiale</P>
+            <P>à l'origine d'un siècle</P>
+            <P>de photographie</P>
           </View>
         </View>
           <View style={styles.btn}>
