@@ -11,14 +11,14 @@ class HomeScreen extends React.Component {
         <View style={styles.redBanner}>
             <Text style={styles.nadarName}>NADAR</Text>
         </View>
-        <View style={styles.wrapper}>
           <View style={styles.bnfLogo}>
-            <Image source={require('../logo/bnf.png')} />
+            <Image source={require('../logo/bnfLogo.png')} />
           </View>
+        <View style={styles.wrapper}>
           <View style={{marginTop: 10}}>
             <View style={styles.title}>
-              <Text style={styles.date} style={{color: '#CA474D', fontSize:20 }}>16</Text>
-              <Text style={styles.date}> octobre 2018</Text>
+              <Text style={styles.date} style={{color: '#CA474D', fontSize:20 }}>16 </Text>
+              <Text style={styles.date}>octobre 2018</Text>
             </View>
             <View style={styles.title}>
               <Text style={styles.date} style={{color: '#CA474D', fontSize:20 }} >3</Text>
@@ -27,8 +27,8 @@ class HomeScreen extends React.Component {
           </View>
           <View style={styles.blackBlock}>
             <H>LES NADAR</H>
-            <H>PAR LES NADAR</H>
-            <P>Une légende familiale</P>
+            <H style={{marginBottom: 50}}>PAR LES NADAR</H>
+            <P style={{marginTop: 20}}>Une légende familiale</P>
             <P>à l'origine d'un siècle</P>
             <P>de photographie</P>
           </View>

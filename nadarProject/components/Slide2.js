@@ -1,25 +1,28 @@
 import React from 'react'
 import { StyleSheet, Text, View, Button, ImageBackground, Image } from 'react-native'
+import { P, H } from './Basics'
+import styles from '../styles.js'
 
 class Slide2 extends React.Component {
-  
+
   render() {
     return (
-      <ImageBackground source= {require('../pictures/background1.png')} style={styles.backgroundImage}>
-          <View style={{marginTop: 10}}>
-            <View style={styles.title}>
-              <Text style={styles.date}> octobre 2018</Text>
-              <Text style={styles.date}> février 2019</Text>
-            </View>
+      <ImageBackground source= {require('../logo/bg_nadar2.png')} style={styles.backgroundImage}>
+      <Text style={styles.redLine}></Text>
+          <View style={{ marginBottom: 30, marginLeft: 50 }}>
+            <H style={{color: 'white', fontSize: 30, marginLeft: 50 }}>PARTICIPEZ</H>
+            <H style={{color: 'white', fontSize: 30, marginLeft: 50 }}>A L'EXPERIENCE !</H>
           </View>
-          <View style={styles.blackBlock}>
-            <Text style={{color: 'white', fontSize: 30 }}>PARTICIPEZ</Text>
-            <Text style={{color: 'white', fontSize: 30 }}>A L'EXPERIENCE !</Text>
+          <View>
+            <P style={{color: 'white', marginLeft: 50 }}>Découvrez une exposition unique.</P>
+            <P style={{color: 'white', marginLeft: 50 }}>De l’histoire de la famille Nadar</P>
+            <P style={{color: 'white', marginLeft: 50 }}>jusqu’à une immersion totale dans</P>
+            <P style={{color: 'white', marginLeft: 50 }}>leurs vie et les oeuvres.</P>
           </View>
           <View style={styles.btn}>
             <Button 
               color='#CA474D'
-              title='DECOUVRIR'
+              title='SUIVANT'
               onPress={() => this.props.navigation.navigate('Slide3')}
               />
           </View>
@@ -27,39 +30,5 @@ class Slide2 extends React.Component {
     )
   }
 }
-const styles = StyleSheet.create ({
-  backgroundImage: {
-      flex: 1,
-  },
-  btn: {
-    flex: 1,
-    justifyContent: 'flex-end', // centré verticalement 
-    marginBottom: 10,
-    marginLeft: 50,
-    marginRight: 50
-  },
-  nadarName: {
-    color: 'white',
-    fontSize: 40,
-  },
-  redBanner: {
-    backgroundColor: '#CA474D',
-    width: 280,
-    marginTop: 40,
-  },
-  bnfLogo: {
-    marginTop: 20,
-  },
-  date: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    fontSize: 20,
-    color: 'white',
-  },
-  title: {
-    display: 'flex',
-    flexDirection: 'row',
-  },
-})
 
 export default Slide2
