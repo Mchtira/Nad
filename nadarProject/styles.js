@@ -5,13 +5,11 @@ const styles = StyleSheet.create({
     fontFamily: 'american',
     color: '#AA8962',
     fontSize: 17,
-    marginLeft: 50,
   },
   h: {
     fontFamily: 'archive',
     color: 'white',
     fontSize: 20,
-    marginLeft: 10,
   },
   txt: {
     fontFamily: 'archive'
@@ -64,7 +62,9 @@ const styles = StyleSheet.create({
     borderColor: 'white',
     borderStyle: 'solid',
     borderRadius: 5,
-    borderWidth: 4
+    borderWidth: 4,
+    paddingLeft: 10,
+    paddingRight: 10,
   },
   redLine: {
     backgroundColor: '#CA474D', 
