@@ -72,6 +72,24 @@ const styles = StyleSheet.create({
     marginTop: 220, 
     marginRight: 220, 
     marginLeft: 50
+  },
+  red: {
+    color: '#CA474D',
+    fontSize: 50
+  },
+  white: {
+    marginTop: 5,
+    color: 'white'
+  },
+  bgRed: {
+    backgroundColor: '#CA474D'
+  },
+  bgWhite: {
+    color: 'white'
+  },
+  inline: {
+    flex: 1,
+    flexDirection: 'row',
   }
 })
 
