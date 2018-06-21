@@ -10,8 +10,8 @@ const styles = StyleSheet.create({
   h: {
     fontFamily: 'archive',
     color: 'white',
-    fontSize: 30,
-    marginLeft: 50,
+    fontSize: 20,
+    marginLeft: 10,
   },
   txt: {
     fontFamily: 'archive'
@@ -32,12 +32,15 @@ const styles = StyleSheet.create({
   nadarName: {
     color: 'white',
     fontSize: 40,
-    fontFamily: 'archive'
+    fontFamily: 'archive',
+    flex: 1,
+    justifyContent: 'flex-end'
   },
   redBanner: {
     backgroundColor: '#CA474D',
     width: 280,
-    marginTop: 40,
+    height: 50,
+    marginTop: 60,
   },
   bnfLogo: {
     marginTop: 20,
@@ -57,8 +60,7 @@ const styles = StyleSheet.create({
     marginTop: 30,
     backgroundColor: 'black',
     marginRight: 50,
-    height: 180,
-    padding: 10,
+    height: 200,
     borderColor: 'white',
     borderStyle: 'solid',
     borderRadius: 5,
