@@ -1,5 +1,6 @@
 import React from 'react'
 import { createStackNavigator } from 'react-navigation'
+import TakePic from './components/camera.js'
 import Slide5 from './components/Slide5.js'
 import Slide4 from './components/Slide4.js'
 import Slide3 from './components/Slide3.js'
@@ -15,9 +16,10 @@ const RootStack = createStackNavigator(
     Slide3: Slide3,
     Slide4: Slide4,
     Slide5: Slide5,
+    Camera: TakePic
   },
   {
-    initialRouteName: 'Slide4',
+    initialRouteName: 'Slide1',
     headerMode: 'none',
   }
 )

@@ -1,11 +1,13 @@
 import React from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View, TouchableOpacity, TouchableHighlight, Image } from 'react-native';
 import { Camera, Permissions } from 'expo';
 
-export default class CameraExample extends React.Component {
+
+export default class TakePic extends React.Component {
   state = {
     hasCameraPermission: null,
     type: Camera.Constants.Type.back,
+    url: ''
   };
 
   async componentWillMount() {
@@ -22,7 +24,7 @@ export default class CameraExample extends React.Component {
     } else {
       return (
         <View style={{ flex: 1 }}>
-          <Camera style={{ flex: 1 }} type={this.state.type}>
+          <Camera  ref={ref => { this.camera = ref }} style={{ flex: 1 }} type={this.state.type}>
             <View
               style={{
                 flex: 1,
@@ -44,9 +46,20 @@ export default class CameraExample extends React.Component {
                 }}>
                 <Text
                   style={{ fontSize: 18, marginBottom: 10, color: 'white' }}>
-                  {' '}Flip{' '}
+                  Flip
                 </Text>
               </TouchableOpacity>
+              <TouchableHighlight style={{paddingTop: 50}} 
+                onPress={async () => {
+                  if (this.camera) {
+                    const photo = await this.camera.takePictureAsync()
+                    this.setState({url : photo})
+                    console.log(photo)
+                  }
+                }
+              }>lol = 
+                <Image source={require('../pictures/pics.png')}/>
+              </TouchableHighlight>
             </View>
           </Camera>
         </View>
