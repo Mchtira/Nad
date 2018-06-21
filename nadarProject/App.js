@@ -1,5 +1,6 @@
 import React from 'react'
 import { createStackNavigator } from 'react-navigation'
+import Slide3 from './components/Slide3.js'
 import Slide2 from './components/Slide2.js'
 import Slide1 from './components/Slide1.js'
 import { Font } from 'expo'

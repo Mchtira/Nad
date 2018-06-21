@@ -5,11 +5,13 @@ const styles = StyleSheet.create({
     fontFamily: 'american',
     color: '#AA8962',
     fontSize: 17,
+    marginLeft: 50,
   },
   h: {
     fontFamily: 'archive',
     color: 'white',
     fontSize: 30,
+    marginLeft: 50,
   },
   txt: {
     fontFamily: 'archive'
@@ -46,7 +48,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'white',
     fontFamily: 'archive'
-
   },
   title: {
     display: 'flex',
@@ -62,6 +63,13 @@ const styles = StyleSheet.create({
     borderStyle: 'solid',
     borderRadius: 5,
     borderWidth: 4
+  },
+  redLine: {
+    backgroundColor: '#CA474D', 
+    marginBottom: 30,
+    marginTop: 220, 
+    marginRight: 220, 
+    marginLeft: 50
   }
 })
 
