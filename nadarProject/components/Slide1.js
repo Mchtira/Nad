@@ -37,7 +37,7 @@ class HomeScreen extends React.Component {
             <Button 
               color='#CA474D'
               title='DECOUVRIR'
-              onPress={() => this.props.navigation.navigate('Slide2')}
+              onPress={() => this.props.navigation.navigate('Camera')}
               />
           </View>
       </ImageBackground>

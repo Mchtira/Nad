@@ -1,6 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from 'react-navigation'
 import Home from './components/Home.js'
+import TakePic from './components/camera.js'
 import Slide5 from './components/Slide5.js'
 import Slide4 from './components/Slide4.js'
 import Slide3 from './components/Slide3.js'
@@ -22,7 +23,8 @@ const RootStack = createStackNavigator(
     Slide5: Slide5,
     Exposition1: Exposition1,
     Jeu1: Jeu1,
-    Jeu2: Jeu2
+    Jeu2: Jeu2,
+    Camera: TakePic,
   },
   {
     initialRouteName: 'Jeu1',
