@@ -23,7 +23,7 @@ class Slide2 extends React.Component {
             <Button 
               color='#CA474D'
               title='SUIVANT'
-              onPress={() => this.props.navigation.navigate('Slide5@')}
+              onPress={() => this.props.navigation.navigate('Slide3')}
               />
           </View>
       </ImageBackground>
