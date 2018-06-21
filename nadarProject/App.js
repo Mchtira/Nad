@@ -15,7 +15,7 @@ const RootStack = createStackNavigator(
     Slide4: Slide4,
   },
   {
-    initialRouteName: 'Slide1',
+    initialRouteName: 'Slide4',
     headerMode: 'none',
   }
 )
