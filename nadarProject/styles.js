@@ -90,7 +90,18 @@ const styles = StyleSheet.create({
   inline: {
     flex: 1,
     flexDirection: 'row',
+  },
+  textInput: {
+    backgroundColor: '#000000',
+    borderRadius: 5,
+    opacity: 0.3,
+    width: 300,
+    height: 70,
+    margin: 8,
+    padding: 20
   }
+  
+
 })
 
 export default styles
