@@ -2,12 +2,8 @@ import React from 'react'
 import { createStackNavigator } from 'react-navigation'
 import Slide2 from './components/Slide2.js'
 import Slide1 from './components/Slide1.js'
-import CameraExample from './components/camera.js'
-import store from './Store.js'
 import { Font } from 'expo'
 import { Text } from 'react-native'
- 
-
 
 const RootStack = createStackNavigator(
   {
@@ -28,9 +24,11 @@ export default class App extends React.Component {
 
   async componentWillMount() {
     await Font.loadAsync({
-      'mekouille': require('./font/Archive.otf')
+      'archive': require('./font/Archive.otf'),
+      'american': require('./font/american.ttf'),
     })
-   this.setState({
+
+    this.setState({
       loading: false
    }) 
   }

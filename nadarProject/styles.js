@@ -2,17 +2,17 @@ import { StyleSheet } from 'react-native'
 
 const styles = StyleSheet.create({
   p: {
-    fontFamily: 'mekouille',
+    fontFamily: 'american',
     color: '#AA8962',
     fontSize: 17,
   },
   h: {
-    fontFamily: 'mekouille', // American
+    fontFamily: 'archive',
     color: 'white',
     fontSize: 30,
   },
   txt: {
-    fontFamily: 'mekouille'
+    fontFamily: 'archive'
   },
   wrapper: {
     marginLeft: 50
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   nadarName: {
     color: 'white',
     fontSize: 40,
-    fontFamily: 'mekouille'
+    fontFamily: 'archive'
   },
   redBanner: {
     backgroundColor: '#CA474D',
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     fontSize: 20,
     color: 'white',
-    fontFamily: 'mekouille'
+    fontFamily: 'archive'
 
   },
   title: {
