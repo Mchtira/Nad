@@ -9,6 +9,7 @@ const RootStack = createStackNavigator(
   {
     Slide1: Slide1,
     Slide2: Slide2,
+    Slide3: Slide3
   },
   {
     initialRouteName: 'Slide1',
