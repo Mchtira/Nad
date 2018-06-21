@@ -62,6 +62,24 @@ const styles = StyleSheet.create({
     borderStyle: 'solid',
     borderRadius: 5,
     borderWidth: 4
+  },
+  red: {
+    color: '#CA474D',
+    fontSize: 50
+  },
+  white: {
+    marginTop: 5,
+    color: 'white'
+  },
+  bgRed: {
+    backgroundColor: '#CA474D'
+  },
+  bgWhite: {
+    color: 'white'
+  },
+  inline: {
+    flex: 1,
+    flexDirection: 'row',
   }
 })
 

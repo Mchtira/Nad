@@ -1,5 +1,7 @@
 import React from 'react'
 import { createStackNavigator } from 'react-navigation'
+import Slide4 from './components/Slide4.js'
+import Slide3 from './components/Slide3.js'
 import Slide2 from './components/Slide2.js'
 import Slide1 from './components/Slide1.js'
 import { Font } from 'expo'
@@ -9,10 +11,11 @@ const RootStack = createStackNavigator(
   {
     Slide1: Slide1,
     Slide2: Slide2,
-    Slide3: Slide3
+    Slide3: Slide3,
+    Slide4: Slide4,
   },
   {
-    initialRouteName: 'Slide1',
+    initialRouteName: 'Slide4',
     headerMode: 'none',
   }
 )
