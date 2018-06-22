@@ -29,11 +29,8 @@ const RootStack = createStackNavigator(
     Video: AnimationScreen
   },
   {
-<<<<<<< HEAD
-    initialRouteName: 'Video',
-=======
-    initialRouteName: 'Slide4',
->>>>>>> ed30ee6d1d6c355e0b22fa70ecb9adad0fbdb4a9
+    initialRouteName: 'Home',
+
     headerMode: 'none',
   }
 )

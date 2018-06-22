@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   redLine: {
     backgroundColor: '#CA474D', 
     marginBottom: 30,
-    marginTop: 120, 
+    marginTop: 220, 
     marginRight: 220, 
     marginLeft: 50
   },
