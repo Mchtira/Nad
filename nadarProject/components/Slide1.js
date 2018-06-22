@@ -12,7 +12,7 @@ class HomeScreen extends React.Component {
             <Text style={styles.nadarName}>NADAR</Text>
         </View>
           <View style={styles.bnfLogo}>
-            <Image source={require('../logo/bnfLogo.png')} />
+            <Image source={require('../logo/bnfLogo.png')}/>
           </View>
         <View style={styles.wrapper}>
           <View style={{marginTop: 10}}>
