@@ -12,7 +12,7 @@ class HomeScreen extends React.Component {
             <Text style={styles.nadarName}>NADAR</Text>
         </View>
           <View style={styles.bnfLogo}>
-            <Image source={require('../logo/bnfLogo.png')} />
+            <Image source={require('../logo/bnfLogo.png')}/>
           </View>
         <View style={styles.wrapper}>
           <View style={{marginTop: 10}}>
@@ -37,7 +37,7 @@ class HomeScreen extends React.Component {
             <Button 
               color='#CA474D'
               title='DECOUVRIR'
-              onPress={() => this.props.navigation.navigate('Camera')}
+              onPress={() => this.props.navigation.navigate('Slide2')}
               />
           </View>
       </ImageBackground>

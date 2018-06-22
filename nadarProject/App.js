@@ -27,7 +27,7 @@ const RootStack = createStackNavigator(
     Camera: TakePic,
   },
   {
-    initialRouteName: 'Jeu1',
+    initialRouteName: 'Slide4',
     headerMode: 'none',
   }
 )
