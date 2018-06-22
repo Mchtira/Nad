@@ -21,9 +21,15 @@ class Slide5 extends React.Component {
   }
 
   render() {
+    
     return (
       <ImageBackground source= {require('../pictures/filtre_bg.png')} style={styles.backgroundImage}>
-        <View style={{marginTop: 100, flex: 1, flexDirection: 'column', alignItems:'center' }}>
+      <TouchableHighlight onPress={()=> { this.props.navigation.navigate('Home') }} style={{ marginLeft: 320 }}>
+          <Image
+            source={require('../pictures/returnHomeBtn.png')} style={{ marginTop: 30, marginRight: 15, height: 35, width: 35, resizeMode: 'contain' }}
+            />
+        </TouchableHighlight> 
+        <View style={{flex: 1, flexDirection: 'column', alignItems:'center' }}>
           <H> CREATION DE COMPTE </H>
           <TextInput
             editable = {true}
@@ -75,10 +81,7 @@ class Slide5 extends React.Component {
         <Modal
           animationType="slide"
           transparent={false}
-          visible={this.state.modalVisible}
-          onRequestClose={() => {
-            alert('le sol est argileux')
-          }}>
+          visible={this.state.modalVisible}>
           <ImageBackground source= {require('../pictures/felicitation.png')} style={styles.backgroundImage}>
             <View style={{ marginTop: 50, flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                 <TouchableHighlight 
