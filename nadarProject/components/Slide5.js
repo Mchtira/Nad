@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Modal, Text, View, Button, ImageBackground, Image, TextInput, TouchableHighlight } from 'react-native'
+import { StyleSheet, Text, View, Button, ImageBackground, Image, TextInput } from 'react-native'
 import { P, H } from './Basics'
 import styles from '../styles.js'
 
@@ -11,13 +11,8 @@ class Slide5 extends React.Component {
         firstName: '',
         lastName: '',
         email: '',
-        password: '',
-        modalVisible: false,
+        password: ''
       }
-  }
-
-  setModalVisible(visible) {
-    this.setState({modalVisible: visible})
   }
 
   render() {
@@ -67,30 +62,13 @@ class Slide5 extends React.Component {
           <Button 
             color='#000000'
             title='CREER SON COMPTE'
-            onPress={() => {
-              this.setModalVisible(true);
-            }}
+            onPress={() => this.props.navigation.navigate('Slide6')}
           />
         </View>
-        <Modal
-          animationType="slide"
-          transparent={false}
-          visible={this.state.modalVisible}
-          onRequestClose={() => {
-            alert('le sol est argileux')
-          }}>
-          <ImageBackground source= {require('../pictures/felicitation.png')} style={styles.backgroundImage}>
-            <View style={{ marginTop: 50, flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                <TouchableHighlight 
-                  onPress={() => { this.setModalVisible(!this.state.modalVisible) }}>
-                  <Text style={{ height: 80, width: 80, marginBottom: 50 }}></Text>
-                </TouchableHighlight>
-            </View>
-          </ImageBackground>
-          </Modal>
       </ImageBackground>
     )
   }
 }
 
 export default Slide5
+
