@@ -10,8 +10,8 @@ class Exposition1 extends React.Component {
           <Button 
             color='#CA474D'
             title='DEMARRER LA VISITE'
-            onPress={() => }
           />
+
       </ImageBackground>
     )
   }
