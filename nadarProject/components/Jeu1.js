@@ -10,7 +10,7 @@ class Jeu1 extends React.Component {
       <ImageBackground source= {require('../pictures/JEUONE.png')} style={[styles.backgroundImage]}>
         <View style={{flex: 1, flexDirection: 'row'}} >
           <TouchableHighlight onPress={()=> { this.props.navigation.navigate('Jeu2') }}>
-            <View style={{ marginTop: 80, height: 120, width: 420, opacity: 0.3, backgroundColor: 'blue' }}></View>
+            <View style={{ marginTop: 80, height: 120, width: 420}}></View>
           </TouchableHighlight> 
           <TouchableHighlight onPress={()=> { this.props.navigation.navigate('Home') }} style={{ flex:1, flexDirection: 'row', justifyContent: 'flex-end' }}>
           <Image

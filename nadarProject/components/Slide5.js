@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Button, ImageBackground, Image, TextInput } from 'react-native'
+import { StyleSheet, Modal, Text, View, Button, ImageBackground, Image, TextInput, TouchableHighlight } from 'react-native'
 import { P, H } from './Basics'
 import styles from '../styles.js'
 
@@ -11,14 +11,25 @@ class Slide5 extends React.Component {
         firstName: '',
         lastName: '',
         email: '',
-        password: ''
+        password: '',
+        modalVisible: false,
       }
   }
 
+  setModalVisible(visible) {
+    this.setState({modalVisible: visible})
+  }
+
   render() {
+    
     return (
       <ImageBackground source= {require('../pictures/filtre_bg.png')} style={styles.backgroundImage}>
-        <View style={{marginTop: 100, flex: 1, flexDirection: 'column', alignItems:'center' }}>
+      <TouchableHighlight onPress={()=> { this.props.navigation.navigate('Home') }} style={{ marginLeft: 320 }}>
+          <Image
+            source={require('../pictures/returnHomeBtn.png')} style={{ marginTop: 30, marginRight: 15, height: 35, width: 35, resizeMode: 'contain' }}
+            />
+        </TouchableHighlight> 
+        <View style={{flex: 1, flexDirection: 'column', alignItems:'center' }}>
           <H> CREATION DE COMPTE </H>
           <TextInput
             editable = {true}
@@ -62,13 +73,27 @@ class Slide5 extends React.Component {
           <Button 
             color='#000000'
             title='CREER SON COMPTE'
-            onPress={() => this.props.navigation.navigate('Slide6')}
+            onPress={() => {
+              this.setModalVisible(true);
+            }}
           />
         </View>
+        <Modal
+          animationType="slide"
+          transparent={false}
+          visible={this.state.modalVisible}>
+          <ImageBackground source= {require('../pictures/felicitation.png')} style={styles.backgroundImage}>
+            <View style={{ marginTop: 50, flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                <TouchableHighlight 
+                  onPress={() => { this.setModalVisible(!this.state.modalVisible) }}>
+                  <Text style={{ height: 80, width: 80, marginBottom: 50 }}></Text>
+                </TouchableHighlight>
+            </View>
+          </ImageBackground>
+          </Modal>
       </ImageBackground>
     )
   }
 }
 
 export default Slide5
-

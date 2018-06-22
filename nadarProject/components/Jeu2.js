@@ -13,6 +13,13 @@ class Jeu2 extends React.Component {
             source={require('../pictures/returnHomeBtn.png')} style={{ marginTop: 30, marginRight: 15, height: 35, width: 35, resizeMode: 'contain' }}
             />
         </TouchableHighlight> 
+        <View style={styles.btn}>
+            <Button 
+              color='#CA474D'
+              title='TAKE A PIC'
+              onPress={() => this.props.navigation.navigate('Camera')}
+              />
+          </View>
       </ImageBackground>
     )
   }
