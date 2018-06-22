@@ -1,7 +1,10 @@
 import { createStore } from 'redux'
+import { Camera, Permissions } from 'expo';
+
 
 const initialState = {
     loading: true,
+    url: '',
 }
 
 const reducer = (state=initialState, action) => {
@@ -9,6 +12,11 @@ const reducer = (state=initialState, action) => {
 		return {
 			...state,
 			loading: false,
+		}
+	if (action.type === 'PIC_URL')    
+		return {
+			...state,
+			url: action.url,
 		}
 	return state 
 }
