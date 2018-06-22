@@ -7,11 +7,6 @@ class Exposition1 extends React.Component {
   render() {
     return (
       <ImageBackground source= {require('../pictures/visiteAudio–1.png')} style={styles.backgroundImage}>
-          <Button 
-            color='#CA474D'
-            title='DEMARRER LA VISITE'
-            onPress={() => }
-          />
       </ImageBackground>
     )
   }
