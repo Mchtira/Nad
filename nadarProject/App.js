@@ -9,7 +9,7 @@ import Slide2 from './components/Slide2.js'
 import Slide1 from './components/Slide1.js'
 import Jeu1 from './components/Jeu1.js'
 import Jeu2 from './components/Jeu2.js'
-import Exposition1 from './components/Exposition1'
+import Exposition1 from './components/Exposition1.js'
 import AnimationScreen from  './components/AnimationScreen'
 import { Font } from 'expo'
 import { Text } from 'react-native'
@@ -29,11 +29,7 @@ const RootStack = createStackNavigator(
     Video: AnimationScreen
   },
   {
-<<<<<<< HEAD
-    initialRouteName: 'Video',
-=======
-    initialRouteName: 'Slide4',
->>>>>>> ed30ee6d1d6c355e0b22fa70ecb9adad0fbdb4a9
+    initialRouteName: 'Home',
     headerMode: 'none',
   }
 )
